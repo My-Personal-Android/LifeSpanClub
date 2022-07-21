@@ -1,4 +1,4 @@
-package coms.lifespanclub;
+package coms.lifespanclub.adapters;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -12,7 +12,7 @@ import coms.lifespanclub.fragments.HomeFragment;
 import coms.lifespanclub.fragments.PairFragment;
 import coms.lifespanclub.fragments.ProfileFragment;
 
-class ViewPagerAdapter extends FragmentStateAdapter {
+public class ViewPagerAdapter extends FragmentStateAdapter {
 
     public ViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);

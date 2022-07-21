@@ -11,6 +11,9 @@ import com.google.android.material.tabs.TabLayoutMediator;
 
 import java.util.ArrayList;
 
+import coms.lifespanclub.adapters.ViewPagerAdapter;
+
+
 public class MainActivity extends AppCompatActivity {
 
     private ArrayList<String> allFragmentsList = new ArrayList<>();

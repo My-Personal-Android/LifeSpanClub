@@ -15,7 +15,6 @@ import coms.lifespanclub.R;
 public class HomeFragment extends Fragment {
 
     private View view;
-    private Button button;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -26,13 +25,7 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_home, container, false);
-        button = view.findViewById(R.id.entry);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getContext(),"working",Toast.LENGTH_SHORT).show();
-            }
-        });
+
         return view;
     }
 }

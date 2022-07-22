@@ -1,4 +1,4 @@
-package coms.lifespanclub;
+package coms.lifespanclub.activities;
 
 import android.os.Bundle;
 
@@ -11,6 +11,7 @@ import com.google.android.material.tabs.TabLayoutMediator;
 
 import java.util.ArrayList;
 
+import coms.lifespanclub.R;
 import coms.lifespanclub.adapters.ViewPagerAdapter;
 
 
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+
+        getSupportActionBar().hide();
 
         initFragmentName();
 

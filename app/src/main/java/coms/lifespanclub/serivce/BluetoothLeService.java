@@ -111,6 +111,7 @@ public class BluetoothLeService extends Service {
                                  final BluetoothGattCharacteristic characteristic) {
         final Intent intent = new Intent(action);
 
+        Log.d(TAG, String.format("Received characterstics property: %d", characteristic.getProperties()));
         // This is special handling for the Heart Rate Measurement profile.  Data parsing is
         // carried out as per profile specifications:
         // http://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.heart_rate_measurement.xml
@@ -124,7 +125,10 @@ public class BluetoothLeService extends Service {
                 format = BluetoothGattCharacteristic.FORMAT_UINT8;
                 Log.d(TAG, "Heart rate format UINT8.");
             }
-            final int heartRate = characteristic.getIntValue(format, 1);
+            final int heartRate2 = characteristic.getIntValue(format, 3);
+            final int heartRate = (characteristic.getIntValue(format, 4)  +( heartRate2 * 256 )) / 36;
+
+
             Log.d(TAG, String.format("Received heart rate: %d", heartRate));
             intent.putExtra(EXTRA_DATA, String.valueOf(heartRate));
         } else {

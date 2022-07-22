@@ -46,16 +46,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView"
                 tools:layout_editor_absoluteX="24dp">
 
-                <EditText
+                <TextView
                     android:id="@+id/rpm"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@android:color/transparent"
-                    android:hint="Enter rpm.."
+                    android:hint="rpm.."
                     android:inputType="numberDecimal"
-                    android:padding="18dp"
+                    android:padding="12dp"
+                    android:gravity="center_vertical"
                     android:text=""
-                    android:textSize="16sp"></EditText>
+                    android:textSize="16sp"></TextView>
 
             </LinearLayout>
 
@@ -104,16 +105,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView"
                 tools:layout_editor_absoluteX="24dp">
 
-                <EditText
+                <TextView
                     android:id="@+id/speed"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@android:color/transparent"
-                    android:hint="Enter speed.."
+                    android:hint="speed.."
                     android:inputType="numberDecimal"
-                    android:padding="18dp"
+                    android:padding="12dp"
+                    android:gravity="center_vertical"
                     android:text=""
-                    android:textSize="16sp"></EditText>
+                    android:textSize="16sp"></TextView>
 
             </LinearLayout>
 
@@ -161,16 +163,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView"
                 tools:layout_editor_absoluteX="24dp">
 
-                <EditText
+                <TextView
                     android:id="@+id/distance"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@android:color/transparent"
-                    android:hint="Enter distance.."
+                    android:hint="distance.."
                     android:inputType="numberDecimal"
-                    android:padding="18dp"
+                    android:padding="12dp"
+                    android:gravity="center_vertical"
                     android:text=""
-                    android:textSize="16sp"></EditText>
+                    android:textSize="16sp"></TextView>
 
             </LinearLayout>
 
@@ -218,16 +221,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView"
                 tools:layout_editor_absoluteX="24dp">
 
-                <EditText
+                <TextView
                     android:id="@+id/calorie"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@android:color/transparent"
-                    android:hint="Enter calorie.."
+                    android:hint="calorie.."
                     android:inputType="numberDecimal"
-                    android:padding="18dp"
+                    android:padding="12dp"
+                    android:gravity="center_vertical"
                     android:text=""
-                    android:textSize="16sp"></EditText>
+                    android:textSize="16sp"></TextView>
 
             </LinearLayout>
 

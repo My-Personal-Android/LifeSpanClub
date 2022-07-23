@@ -23,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
     private ViewPagerAdapter adapter;
     private Toolbar toolbar;
 
+    public static String DeviceName = "";
+    public static String DeviceAddress = "";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

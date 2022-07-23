@@ -37,19 +37,27 @@ public class HomeFragment extends Fragment {
         return view;
     }
 
-    public Double getRpm(Double readValue) { // rpm / min
-        return readValue / 60;
+    public String getRpm(Double readValue) { // rpm / min
+        Double calculate = readValue;
+        String strDouble = String.format("%. 2f", calculate);
+        return strDouble;
     }
 
-    public Double getSpeedFromRpm(Double rpm) { // km / h
-        return 60 * rpm * (590 * 3 * 3014159) / 1000000;
+    public String getSpeedFromRpm(Double rpm) { // km / h
+        Double calculate = 60 * rpm * (590 * 3 * 3.14159) / 1000000;
+        String strDouble = String.format("%. 2f", calculate);
+        return strDouble;
     }
 
-    public Double getDistanceFromSpeed(Double speed) { // km
-        return speed / 60;// (min)
+    public String getDistanceFromSpeed(Double speed) { // km
+        Double calculate = speed / 60;
+        String strDouble = String.format("%. 2f", calculate);
+        return strDouble;
     }
 
-    public Double getCalorieFromDistance(Double distance) { // calorie
-        return 4.35 / 60; // (min)
+    public String getCalorieFromDistance(Double distance) { // calorie
+        Double calculate = 4.35 / 60;
+        String strDouble = String.format("%. 2f", calculate);
+        return strDouble;
     }
 }
